@@ -42,12 +42,12 @@ replacement_colors = [
 ]
 
 
-for filename in os.listdir("/Users/jayroy/Study/NYU/Sem-2/dataset-6/"):
+for filename in os.listdir("dataset-6/"):
         # Check if the file is an image
         if filename.endswith(('.png', '.jpg', '.jpeg')):
             # Get the full path of the image
-            image_path = os.path.join("/Users/jayroy/Study/NYU/Sem-2/dataset-6/", filename)
+            image_path = os.path.join("dataset-6/", filename)
             
             # Process the image
             modified_image = replace_colors(image_path, replacement_colors)
-            modified_image.save('/Users/jayroy/Study/NYU/Sem-2/dataset-6/'+filename)
+            modified_image.save('dataset-6/'+filename)
